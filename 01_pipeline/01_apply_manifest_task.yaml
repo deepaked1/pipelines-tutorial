@@ -3,10 +3,11 @@ kind: Task
 metadata:
   name: apply-manifests
 spec:
-  resources:
-    inputs:
-      - {type: git, name: source}
-  params:
+  inputs:
+    resources:
+    - name: source
+      type: git
+    params:
     - name: manifest_dir
       description: The directory in source that contains yaml manifests
       type: string
