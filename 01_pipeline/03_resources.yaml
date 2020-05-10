@@ -17,7 +17,8 @@ spec:
   type: image
   params:
   - name: url
-    value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-api:latest
+#    value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-api:latest
+    value: quay.io/deepaked/vote-api:latest
 ---
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
@@ -37,4 +38,5 @@ spec:
   type: image
   params:
   - name: url
-    value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-ui:latest
+#    value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/vote-ui:latest
+    value: quay.io/deepaked/vote-ui:latest
