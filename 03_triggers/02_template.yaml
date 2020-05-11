@@ -33,7 +33,7 @@ spec:
       type: image
       params:
       - name: url
-        value: quay.io/deepaked/$(params.git-repo-name):latest
+        value: quay.io/deepaked/$(params.git-repo-name):v0.0.1
  #       value: quay.io/deepaked/$(params.git-repo-name):$(uid)
 
   - apiVersion: tekton.dev/v1alpha1
