@@ -33,8 +33,8 @@ spec:
       type: image
       params:
       - name: url
- #       value: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/$(params.git-repo-name):latest
         value: quay.io/deepaked/$(params.git-repo-name):latest
+ #       value: quay.io/deepaked/$(params.git-repo-name):$(uid)
 
   - apiVersion: tekton.dev/v1alpha1
     kind: PipelineRun
